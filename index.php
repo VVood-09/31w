@@ -30,8 +30,8 @@
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();
-                    the_title();
-                    the_content();
+                    the_title('<p>', '</p>');
+                    the_content(null, true);
                 endwhile;
             endif;
         ?>
