@@ -23,7 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../../../gr21647a22/wp-content/themes/a22-31w/style.css">
+    <!-- <link rel="stylesheet" href="../../../../gr21647a22/wp-content/themes/a22-31w/style.css"> -->
 </head>
 <body>
     <main>
