@@ -18,7 +18,13 @@ Text Domain: underscore
 }
 
 body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
     margin: 25px auto 0 auto;
 }
 
