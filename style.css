@@ -18,9 +18,11 @@ Text Domain: underscore
 }
 
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 25px auto 0 auto;
 }
 
 h1 {
+    font-size: 2rem;
     color: blue;
 }
