@@ -17,12 +17,11 @@ Text Domain: underscore
     margin: 0;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+body > div > * + * {
+    margin-top: 50px;
 }
 
-main {
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: 25px auto 0 auto;
