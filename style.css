@@ -12,3 +12,15 @@ License URI: LICENSE
 Text Domain: underscore
 */
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 25px auto 0 auto;
+}
+
+h1 {
+    color: blue;
+}
