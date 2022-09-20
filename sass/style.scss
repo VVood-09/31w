@@ -14,15 +14,17 @@ Text Domain: underscore
 
 /* -------------------------------------------------------------- */
 
-// Import des bases
-@import "base/body";
-@import "base/heading";
+// Import des variables
+@import "variables/couleurs";
+@import "variables/polices";
+@import "variables/structures";
 
 // Import des generics
 @import "generic/box-sizing";
 @import "generic/normalize";
 
-// Import des variables
-@import "variables/couleurs";
-@import "variables/polices";
-@import "variables/structures";
+// Import des bases
+@import "base/heading";
+@import "base/body";
+
+
