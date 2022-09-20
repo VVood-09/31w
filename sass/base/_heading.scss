@@ -1,8 +1,11 @@
 h1 {
     font-family: $police__titre-principale;
     font-size: 2rem;
-    color: blue;
+    color: $couleur__titre;
 }
 h2, h3, h4, h5, h6 {
     font-family: $police__titre-secondaire;
+}
+p {
+    color: $couleur__police;
 }
