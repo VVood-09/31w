@@ -347,6 +347,22 @@ h2, h3, h4, h5, h6 {
   color: #bbbbfa;
 }
 
+a {
+  color: #f88d46;
+}
+a:visited {
+  color: #be0d00;
+}
+a:hover, a:focus, a:active {
+  color: #bbbbfa;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
 p {
   margin-top: 20px;
   color: #fff;
