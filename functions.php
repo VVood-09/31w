@@ -50,3 +50,14 @@ function under_scripts() {
 	wp_enqueue_style('under-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
 }
 add_action( 'wp_enqueue_scripts', 'under_scripts' );
+
+
+/**
+ * Initialisation de la fonction de création de menu 
+ */
+function mon_31w_register_nav_menu(){
+	register_nav_menus( array(
+		'menu_primaire' => __( 'Menu primaire', 'text_domain' ),
+	) );
+}
+add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );

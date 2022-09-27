@@ -39,4 +39,5 @@
 					<p class="site-description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped	?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
+			<?php wp_nav_menu(array("menu" => "Primaire", "container" => "nav")); ?>
 		</header><!-- #masthead -->
