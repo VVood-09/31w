@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -16,19 +17,25 @@
 ?>
 <h1 class="trace">single.php</h1>
 <?php get_header(); ?>
+
 <body>
     <main>
         <?php
-            if ( have_posts() ) :
-                while ( have_posts() ) :
-                    the_post();
-                    the_title('<h2>', '</h2>');
-                    the_content(null, true);
-                endwhile;
-            endif;
-        ?>
+        if (have_posts()) :
+            while (have_posts()) :
+                the_post();
+                the_title('<h2>', '</h2>');
+                the_content(null, true); ?>
+
+                <p><?php the_weekday(); ?> <?php the_date(); ?> <?php the_time(); ?>.</p>
+                <p><?php the_author(); ?></p>
+                <p><?php the_category(); ?></p>
+            <?php endwhile;
+        endif;
+            ?>
     </main>
 </body>
+
 </html>
 
 <?php

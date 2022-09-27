@@ -13,3 +13,6 @@ p {
     margin-top: $espacement__petit;
     color: $couleur__police;
 }
+p::first-letter{
+    text-transform: uppercase;
+}
