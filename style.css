@@ -10,7 +10,7 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: underscore
+Text Domain: 31W
 */
 /* -------------------------------------------------------------- */
 /* Inherit box-sizing to more easily change it's value on a component level.
@@ -361,4 +361,8 @@ body {
 
 body > div > * + * {
   margin-top: 50px;
+}
+
+.trace {
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */

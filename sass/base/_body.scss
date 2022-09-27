@@ -7,3 +7,7 @@ body {
 body > div > * + * {
     margin-top: 50px;
 }
+
+.trace {
+    background-color: green;
+}
