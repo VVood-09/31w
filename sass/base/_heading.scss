@@ -1,18 +1,11 @@
 h1 {
-    font-family: $police__titre-principale;
+    font-family: $police__titre--principale;
     font-size: 2rem;
     color: $couleur__titre;
     margin-bottom: $espacement__grand;
 }
 h2, h3, h4, h5, h6 {
     margin-top: $espacement__moyen;
-    font-family: $police__titre-secondaire;
+    font-family: $police__titre--secondaire;
     color: $couleur__titre;
-}
-p {
-    margin-top: $espacement__petit;
-    color: $couleur__police;
-}
-p::first-letter{
-    text-transform: uppercase;
 }

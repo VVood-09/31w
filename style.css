@@ -352,10 +352,6 @@ p {
   color: #fff;
 }
 
-p::first-letter {
-  text-transform: uppercase;
-}
-
 body {
   background-color: #000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

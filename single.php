@@ -27,9 +27,8 @@
                 the_title('<h2>', '</h2>');
                 the_content(null, true); ?>
 
-                <p><?php the_weekday(); ?> <?php the_date(); ?> <?php the_time(); ?>.</p>
-                <p><?php the_author(); ?></p>
-                <p><?php the_category(); ?></p>
+                <p>Écrit le <?php the_weekday(); ?> <?php the_date(); ?> à <?php the_time(); ?>.</p>
+                <p>Par <?php the_author(); ?> <br><small>Catégorie : <?php the_category(); ?></small></p>
             <?php endwhile;
         endif;
             ?>
