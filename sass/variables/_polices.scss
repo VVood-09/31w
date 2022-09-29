@@ -1,3 +1,9 @@
+/* Fontes générales */
 $police__main: Verdana, Geneva, Tahoma, sans-serif;
 $police__titre--principale: Arial, Helvetica, sans-serif;
 $police__titre--secondaire: 'Times New Roman', Times, serif;
+
+/* Dans _simple.scss */
+$font__pre: 'Times New Roman', Times, serif;
+$font__line-height-pre: 0.8em;
+$font__code: 'Times New Roman', Times, serif;

@@ -1,7 +1,30 @@
+/* Couleur du body */
 $couleur__background--body: #000;
+
+/* Couleurs typographiques */
 $couleur__titre: #bbbbfa;
 $couleur__police: #fff;
 
+/* Dans _simple.scss */
+$color__background-ins: yellow;
+$color__border-abbr: lightgreen;
+$color__background-pre: green;
+
+/* Couleurs des liens */
 $color__link: #f88d46;
 $color__link--visited:#be0d00;
 $color__link--hover:#bbbbfa;
+
+/* Couleurs des boutons*/
+$couleur__border-button: black;
+$couleur__background-button: grey;
+$couleur__border-button-hover: lightblue;
+$couleur__border-button-focus: lightblue;
+
+/* Couleurs des champs divers 'INPUT' */
+$color__text-input: black;
+$color__border-input: black;
+$color__text-input-focus: blue;
+
+/* Règle horizontale thèmatique */
+$color__background-hr:purple;
