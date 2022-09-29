@@ -14,8 +14,6 @@ Text Domain: 31W
 
 /* -------------------------------------------------------------- */
 
-// Import des composantes
-@import "composantes/nav_principale";
 
 // Import des variables
 @import "variables/couleurs";
@@ -25,6 +23,7 @@ Text Domain: 31W
 // Import des generics
 @import "generic/box-sizing";
 @import "generic/normalize";
+
 
 // Import des bases
 @import "base/body";
@@ -38,3 +37,6 @@ Text Domain: 31W
 @import "base/simple";
 
 
+
+// Import des composantes
+@import "composantes/nav_principale";
