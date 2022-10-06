@@ -16,10 +16,10 @@
 
 ?>
 <?php get_header(); ?>
-<h1 class="trace">single.php</h1>
+<!-- <h1 class="trace">single.php</h1> -->
 
 <body>
-    <main>
+    <main class="site__main">
         <?php
         if (have_posts()) :
             while (have_posts()) :

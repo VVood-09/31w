@@ -24,6 +24,8 @@ Text Domain: 31W
 @import "generic/box-sizing";
 @import "generic/normalize";
 
+// Import des layouts
+@import "layouts/sidebar-content";
 
 // Import des bases
 @import "base/body";

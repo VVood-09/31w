@@ -343,6 +343,35 @@ template {
   display: none;
 }
 
+.site {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__header {
+  grid-area: header;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget__area {
+  grid-area: sidebar;
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
 body {
   background-color: #000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -570,13 +599,13 @@ big {
   font-size: 125%;
 }
 
-.menu-primaire-container .menu {
+.menu__principal .menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   gap: 50px;
 }
-.menu-primaire-container .menu .menu-item a {
+.menu__principal .menu .menu-item a {
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

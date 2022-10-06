@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer>
+	<footer class="site__footer">
 		<p>Mon pied de page AKA el Footer</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
