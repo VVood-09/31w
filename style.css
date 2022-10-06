@@ -17,6 +17,7 @@ Text Domain: 31W
 /* Couleurs typographiques */
 /* Dans _simple.scss */
 /* Couleurs des liens */
+/* Couleurs des liens aside */
 /* Couleurs des boutons*/
 /* Couleurs des champs divers 'INPUT' */
 /* Règle horizontale thèmatique */
@@ -494,6 +495,22 @@ a:hover, a:active {
   outline: 0;
 }
 
+.menu__aside a {
+  color: #be0d00;
+}
+.menu__aside a:visited {
+  color: #be0d00;
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: #f88d46;
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
+  outline: 0;
+}
+
 ul,
 ol {
   margin: 0 0 1.5em 3em;
@@ -602,6 +619,19 @@ big {
   gap: 50px;
 }
 .menu__principal .menu .menu-item a {
+  text-decoration: none;
+}
+
+.menu__aside .menu {
+  margin: 0 20px 0 0;
+  padding: 0 20px 0 0;
+  border-right: 1px solid red;
+  list-style-type: none;
+}
+.menu__aside .menu .menu-item {
+  padding-bottom: 5px;
+}
+.menu__aside .menu .menu-item a {
   text-decoration: none;
 }
 

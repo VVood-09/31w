@@ -1,0 +1,19 @@
+.menu__aside { 
+    //nav
+    .menu { 
+        //ul
+        margin: 0 $espacement__petit 0 0;
+        padding: 0 $espacement__petit 0 0;
+        border-right: 1px solid red;
+        list-style-type: none;
+
+        .menu-item { 
+            //li
+            padding-bottom: 5px;
+            a {
+                text-decoration: none;
+                
+            }
+        }
+    }
+}
