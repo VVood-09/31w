@@ -379,10 +379,6 @@ body {
   margin: 25px auto 0 auto;
 }
 
-body > div > * + * {
-  margin-top: 50px;
-}
-
 .trace {
   background-color: green;
 }
@@ -467,7 +463,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: #bbbbfa;
-  margin-bottom: 120px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -608,4 +603,8 @@ big {
 }
 .menu__principal .menu .menu-item a {
   text-decoration: none;
+}
+
+.site__branding {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
