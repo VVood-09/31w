@@ -464,13 +464,13 @@ textarea {
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  color: #bbbbfa;
+  color: #f88d46;
 }
 
 h2, h3, h4, h5, h6 {
   margin-top: 60px;
   font-family: "Times New Roman", Times, serif;
-  color: #bbbbfa;
+  color: #f88d46;
 }
 
 hr {
@@ -481,13 +481,13 @@ hr {
 }
 
 a {
-  color: #f88d46;
+  color: #be0d00;
 }
 a:visited {
   color: #be0d00;
 }
 a:hover, a:focus, a:active {
-  color: #bbbbfa;
+  color: #f88d46;
 }
 a:focus {
   outline: thin dotted;
@@ -624,6 +624,8 @@ big {
   justify-content: space-between;
 }
 .menu__principal .menu .menu-item a {
+  font-size: 1.2em;
+  font-weight: bold;
   text-decoration: none;
   padding: 0 20px;
 }
