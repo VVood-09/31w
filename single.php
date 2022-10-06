@@ -15,8 +15,8 @@
 
 
 ?>
-<h1 class="trace">single.php</h1>
 <?php get_header(); ?>
+<h1 class="trace">single.php</h1>
 
 <body>
     <main>
