@@ -16,6 +16,7 @@ Text Domain: 31W
 /* Couleur du body */
 /* Couleurs typographiques */
 /* Dans _simple.scss */
+/* Couleur du navigateur principal */
 /* Couleurs des liens */
 /* Couleurs des liens aside */
 /* Couleurs des boutons*/
@@ -377,7 +378,7 @@ body {
   background-color: #000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 80%;
-  margin: 25px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .trace {
@@ -611,15 +612,20 @@ big {
   font-size: 125%;
 }
 
+.menu__principal {
+  background-color: rgb(26, 26, 26);
+  padding: 20px 0;
+}
 .menu__principal .menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
 }
 .menu__principal .menu .menu-item a {
   text-decoration: none;
+  padding: 0 20px;
 }
 
 .menu__aside .menu {

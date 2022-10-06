@@ -2,7 +2,7 @@ body {
     background-color: $couleur__background--body;
     font-family: $police__main;
     width: 80%;
-    margin: 25px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 body > div > * + * {
     // margin-top: 50px;
