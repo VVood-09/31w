@@ -71,7 +71,7 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 	   if($value->title[0] >= 0 && $value->title[0] <= 9){
 		   $value->title = substr($value->title,7);
 	   }
-	   if ($arg->menu == "sidebar"){
+	   if ($arg->menu == "aside"){
        $value->title = wp_trim_words($value->title,3,"...");
        // echo $value->title . '<br>';
 	   }

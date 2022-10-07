@@ -1,21 +1,3 @@
-.site {
-	display: grid;
-
-	grid-template-columns: auto;
-	grid-template-areas:
-		"header"
-		"main"
-		"footer";
-
-	@media screen and (min-width: 700px){
-		
-		grid-template-columns: ($size__site-sidebar) auto;
-		grid-template-areas:
-			"header header"
-			"sidebar main"
-			"footer footer";
-	}
-}
 
 .site__header {
 	grid-area: header;
@@ -27,11 +9,33 @@
 }
 
 .widget__area {
-	grid-area: sidebar;
+	display: none;
 }
 
 .site__footer {
 	grid-area: footer;
 }
 
-@import "no-sidebar";
+.site {
+	display: grid;
+
+	grid-template-columns: auto;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+
+	@media screen and (min-width: 990px){
+		
+		.widget__area {
+			grid-area: sidebar;
+			display: block;
+		}
+		grid-template-columns: ($size__site-sidebar) auto;
+		grid-template-areas:
+			"header header"
+			"sidebar main"
+			"footer footer";
+	}
+}
+// @import "no-sidebar";
