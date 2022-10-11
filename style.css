@@ -647,6 +647,14 @@ big {
   text-decoration: none;
 }
 
+.site__title {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+.site__description {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
 .site__branding {
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

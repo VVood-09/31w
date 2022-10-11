@@ -70,6 +70,8 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
        // print_r($value);
 	   if($value->title[0] >= 0 && $value->title[0] <= 9){
 		   $value->title = substr($value->title,7);
+		   $arrTitle = explode("(", $value->title);
+		   $value->title = $arrTitle[0];
 	   }
 	   if ($arg->menu == "aside"){
        $value->title = wp_trim_words($value->title,3,"...");
