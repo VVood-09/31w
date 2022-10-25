@@ -625,7 +625,10 @@ big {
   width: 20%;
   height: 200px;
   color: white;
-  border: 1px solid red;
+}
+
+#sidebar-footer-4 {
+  background-color: white;
 }
 
 .menu__principal {
