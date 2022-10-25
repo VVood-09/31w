@@ -1,0 +1,11 @@
+.site__footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site__footer > div {
+    width: 20%;
+    height: 200px;
+    color: white;
+    border: 1px solid red;
+}

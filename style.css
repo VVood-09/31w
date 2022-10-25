@@ -616,6 +616,18 @@ big {
   font-size: 125%;
 }
 
+.site__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.site__footer > div {
+  width: 20%;
+  height: 200px;
+  color: white;
+  border: 1px solid red;
+}
+
 .menu__principal {
   background-color: rgb(26, 26, 26);
   padding: 20px 0;
