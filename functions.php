@@ -143,5 +143,27 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __( 'Aside widget 1' ),
+			'description'   => __( 'Calendrier' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'aside-2',
+			'name'          => __( 'Aside widget 2' ),
+			'description'   => __( 'Liens utile' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 }

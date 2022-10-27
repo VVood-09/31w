@@ -627,8 +627,18 @@ big {
   color: white;
 }
 
-#sidebar-footer-4 {
-  background-color: white;
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar-aside-1 {
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.sidebar-aside-2 {
+  margin-top: 20px;
+  margin-right: 40px;
 }
 
 .menu__principal {
