@@ -8,8 +8,11 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area {
-	display: none;
+.widget__area-1 {
+	grid-area: sidebar1;
+}
+.widget__area-2 {
+	grid-area: sidebar2;
 }
 
 .site__footer {
@@ -22,19 +25,19 @@
 	grid-template-columns: auto;
 	grid-template-areas:
 		"header"
+		"sidebar1"
 		"main"
+		"sidebar2"
 		"footer";
 
 	@media screen and (min-width: 990px){
 		
-		.widget__area {
-			grid-area: sidebar;
-			display: block;
-		}
 		grid-template-columns: ($size__site-sidebar) auto;
 		grid-template-areas:
 			"header header"
-			"sidebar main"
+			"sidebar1 main"
+			"sidebar2 main"
+			". main"
 			"footer footer";
 	}
 }

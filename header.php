@@ -52,13 +52,15 @@
 				<?php endif; ?>
 			</div>.site-branding
 		</header><!-- #masthead -->
-		<aside class="widget__area ">
+		<aside class="widget__area-1">
 			<h2>Menu secondaire</h2>
 			<?php wp_nav_menu(array(
-					"menu" => "aside",
-					"container" => "nav",
-					"container_class" => "menu__aside"
+				"menu" => "aside",
+				"container" => "nav",
+				"container_class" => "menu__aside"
 			));	?>
-		<div><?php get_sidebar( 'aside-1' ); ?></div>
-		<div><?php get_sidebar( 'aside-2' ); ?></div>
+		</aside>
+		<aside class="widget__area-2">
+			<div><?php get_sidebar('aside-1'); ?></div>
+			<div><?php get_sidebar('aside-2'); ?></div>
 		</aside>
