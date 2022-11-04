@@ -64,7 +64,7 @@ add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 /* Pour filtrer les éléments du menu */
 function igc31w_filtre_choix_menu($obj_menu, $arg){
-    // var_dump($arg);
+    // var_dump($arg); die;
     foreach($obj_menu as $cle => $value)
     {
        if($arg->menu == "aside" || $arg->menu == "principal")

@@ -55,12 +55,14 @@
 		<aside class="site__menu">
 			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
 			<label for="chk-burger" class="burger">&#127829;</label>
-			<nav class="menu__aside"></nav>
+			<nav class="menu__aside">
+				<h2>Menu secondaire</h2>
 			<?php wp_nav_menu(array(
 				"menu" => "aside",
-				"container" => "nav",
-				"container_class" => "menu__aside"
+				"container" => "",
+				"container_class" => "",
 			));	?>
+			</nav>
 		</aside>
 		<aside class="site__sidebar">
 			<div><?php get_sidebar('aside-1'); ?></div>
