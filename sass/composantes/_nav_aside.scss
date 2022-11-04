@@ -15,9 +15,9 @@
     width: 32px;
     height: 32px;
     font-size: 32px;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
+    top: 20px;
+    right: 15%;
+    z-index: 2;
     transform: rotate(0deg);
     transform-origin: 16px 16px;
     transition: transform 0.5s;
@@ -31,12 +31,15 @@
     display: flex;
     position: absolute;
     width: 100vw;
-    top: 70px;
+    top: 0;
+    padding: 72px 0 20px 0;
     background-color: black;
     transform: translateX(-100vw);
     transition: transform 0.5s;
+    z-index: 1;
     @media screen and (min-width:990px) {
         position: static;
+        padding: 0;
         transform: translateX(0);
         width: auto;
     }
@@ -44,8 +47,11 @@
         //ul
         margin: 0 $espacement__petit 0 0;
         padding: 0 $espacement__petit 0 0;
-        border-right: 1px solid red;
+        border: none;
         list-style-type: none;
+        @media screen and (min-width:990px) {
+            border-right: 1px solid red;
+        }
 
         .menu-item { 
             //li

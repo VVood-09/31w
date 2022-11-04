@@ -664,7 +664,14 @@ big {
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 990px) {
+  .menu__principal .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .menu__principal .menu .menu-item a {
   font-size: 1.2em;
@@ -690,9 +697,9 @@ big {
   width: 32px;
   height: 32px;
   font-size: 32px;
-  top: 50px;
-  right: 50px;
-  z-index: 1;
+  top: 20px;
+  right: 15%;
+  z-index: 2;
   transform: rotate(0deg);
   transform-origin: 16px 16px;
   transition: transform 0.5s;
@@ -707,14 +714,17 @@ big {
   display: flex;
   position: absolute;
   width: 100vw;
-  top: 70px;
+  top: 0;
+  padding: 72px 0 20px 0;
   background-color: black;
   transform: translateX(-100vw);
   transition: transform 0.5s;
+  z-index: 1;
 }
 @media screen and (min-width: 990px) {
   .menu__aside {
     position: static;
+    padding: 0;
     transform: translateX(0);
     width: auto;
   }
@@ -722,8 +732,13 @@ big {
 .menu__aside .menu {
   margin: 0 20px 0 0;
   padding: 0 20px 0 0;
-  border-right: 1px solid red;
+  border: none;
   list-style-type: none;
+}
+@media screen and (min-width: 990px) {
+  .menu__aside .menu {
+    border-right: 1px solid red;
+  }
 }
 .menu__aside .menu .menu-item {
   padding-bottom: 5px;

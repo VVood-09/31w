@@ -55,6 +55,7 @@
 		<aside class="site__menu">
 			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
 			<label for="chk-burger" class="burger">&#127829;</label>
+			<nav class="menu__aside"></nav>
 			<?php wp_nav_menu(array(
 				"menu" => "aside",
 				"container" => "nav",
