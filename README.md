@@ -15,4 +15,6 @@ Optimisation du code et du design (gestion des comportements et CSS) pour le plu
 [https://prom3.sg-host.com/](https://prom3.sg-host.com/)
 
 ## Exercice 3
-
+L'objectif est de transformer le menu secondaire, celui en *aside*, en menu *burger*. 
+Lorsque la taille d'affichage de l'écran est suffisament réduit, le menu secondaire se cache.
+Sur le click de l'icône *burger*(une slice de pizzz), le menu secondaire s'affiche à partir de la gauche de l'écran. 
