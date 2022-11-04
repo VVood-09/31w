@@ -24,11 +24,11 @@
                 while ( have_posts() ) :
                     the_post();
                     ?>
-
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <?php
-                    the_content(null, true);
-                endwhile;
+                    <article class="main__post">
+                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                        <?php the_content(null, true); ?>
+                    </article>
+                <?php endwhile;
             endif;
         ?>
     </main>

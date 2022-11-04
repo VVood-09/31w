@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -20,20 +21,20 @@
 <body>
     <main class="site__main">
         <?php
-            if ( have_posts() ) :
-                while ( have_posts() ) :
-                    the_post();
-                    ?>
-
+        if (have_posts()) :
+            while (have_posts()) :
+                the_post(); ?>
+                <article class="main__post">
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <h3>Durée du cours: <?php the_field('duree'); ?></h3>
-                    <?php
-                    the_content(null, true);
-                endwhile;
-            endif;
+                    <?php the_content(null, true); ?>
+                </article>
+        <?php endwhile;
+        endif;
         ?>
     </main>
 </body>
+
 </html>
 
 <?php
