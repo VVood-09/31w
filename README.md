@@ -1,6 +1,7 @@
-## Exercice 1 
-du cours 582-31W-MA INTRODUCTION À UN GESTIONNAIRE DE CONTENU
+# cours 582-31W-MA INTRODUCTION À UN GESTIONNAIRE DE CONTENU
 #### Vincent Dubois e2295393 gr21647
+
+## Exercice 1 
 Création d'un thème pour Wordpress.
 
 À partir du theme _underscore, un thème est construit, sur des fonctions essentiels concernant la gestion de menu, header, main, aside et footer.
@@ -12,3 +13,6 @@ Intégration de la fonction de Widget du theme _underscore dans le site web afin
 Optimisation du code et du design (gestion des comportements et CSS) pour le plugin du carrousel ainsi que pour le style général.
 
 [https://prom3.sg-host.com/](https://prom3.sg-host.com/)
+
+## Exercice 3
+

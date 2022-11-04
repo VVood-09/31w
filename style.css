@@ -472,7 +472,6 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  margin-top: 60px;
   font-family: "Times New Roman", Times, serif;
   color: #f88d46;
 }
@@ -564,7 +563,7 @@ figure {
 p {
   margin-top: 20px;
   color: #fff;
-  margin-bottom: 1.5em;
+  margin-bottom: 60px;
 }
 
 dfn,
