@@ -8,11 +8,11 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area-1 {
-	grid-area: sidebar1;
+.site__menu {
+	grid-area: menu;
 }
-.widget__area-2 {
-	grid-area: sidebar2;
+.site__sidebar {
+	grid-area: sidebar;
 }
 
 .site__footer {
@@ -25,9 +25,9 @@
 	grid-template-columns: auto;
 	grid-template-areas:
 		"header"
-		"sidebar1"
+		"menu"
 		"main"
-		"sidebar2"
+		"sidebar"
 		"footer";
 
 	@media screen and (min-width: 990px){
@@ -35,8 +35,8 @@
 		grid-template-columns: ($size__site-sidebar) auto;
 		grid-template-areas:
 			"header header"
-			"sidebar1 main"
-			"sidebar2 main"
+			"menu main"
+			"sidebar main"
 			". main"
 			"footer footer";
 	}
