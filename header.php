@@ -53,7 +53,8 @@
 			</div>.site-branding
 		</header><!-- #masthead -->
 		<aside class="site__menu">
-			<h2>Menu secondaire</h2>
+			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
+			<label for="chk-burger" class="burger">&#127829;</label>
 			<?php wp_nav_menu(array(
 				"menu" => "aside",
 				"container" => "nav",

@@ -673,6 +673,52 @@ big {
   padding: 0 20px;
 }
 
+.chk-burger {
+  display: none;
+}
+
+.chk-burger:checked ~ .burger {
+  transform: rotate(90deg);
+}
+
+.chk-burger:checked ~ .menu__aside {
+  transform: translateX(0);
+}
+
+.burger {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  transform: rotate(0deg);
+  transform-origin: 16px 16px;
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 990px) {
+  .burger {
+    display: none;
+  }
+}
+
+.menu__aside {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  top: 70px;
+  background-color: black;
+  transform: translateX(-100vw);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 990px) {
+  .menu__aside {
+    position: static;
+    transform: translateX(0);
+    width: auto;
+  }
+}
 .menu__aside .menu {
   margin: 0 20px 0 0;
   padding: 0 20px 0 0;
