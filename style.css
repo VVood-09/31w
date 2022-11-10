@@ -760,6 +760,25 @@ big {
   text-decoration: none;
 }
 
+.menu_evenement .menu {
+  list-style: none;
+  display: flex;
+  border: solid 1px blue;
+  justify-content: space-between;
+}
+.menu_evenement .menu-item {
+  width: 25%;
+}
+.menu_evenement .evenement__porte {
+  background-color: pink;
+}
+.menu_evenement .evenement__stage {
+  background-color: lavender;
+}
+.menu_evenement .evenement__projets {
+  background-color: aqua;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
 }
