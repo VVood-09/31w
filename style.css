@@ -778,6 +778,11 @@ big {
 .menu_evenement .evenement__projets {
   background-color: aqua;
 }
+.menu_evenement .menu__item__icone {
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+}
 
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);

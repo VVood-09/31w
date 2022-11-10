@@ -50,7 +50,7 @@
 					<p class="site__description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped	
 													?></p>
 				<?php endif; ?>
-			</div>.site-branding
+			</div>
 		</header><!-- #masthead -->
 		<aside class="site__menu">
 			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">

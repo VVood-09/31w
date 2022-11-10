@@ -174,13 +174,26 @@ function my_register_sidebars() {
  * @param object $item 			élément du menu
  */
 function prefix_nav_description( $item_output, $item) {
-    if ( !empty( $item->description ) ) {
-        $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
-              $item_output );
-    }
-    return $item_output;
+	if ( !empty( $item->description ) ) {
+		$item_output = str_replace( '</a>',
+		'<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+		$item_output );
+	}
+	return $item_output;
 }
 add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 // l'argument 10 : niveau de privilège
 // l'argument 2 : le nombre d'argument dans la fonction de rappel: «prefix_nav_description»
+
+/**
+ *
+ *	La fonction permettra de modifier la requête principale de wordpress - main query - 
+ *	to 
+ *
+ */
+function wpdocs_exclude_category( $query ) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'category_name', 'halloween' );
+	}
+}
+add_action( 'pre_get_posts', 'wpdocs_exclude_category' );
