@@ -2,21 +2,23 @@
     .menu{
         list-style: none;
         display: flex;
-        border: solid 1px blue;
+        // border: solid 1px blue;
         justify-content: space-between;
+        margin: 0;
+        padding: 0;
     }
     .menu-item{
         width: 25%;
 
     }
     .evenement__porte{
-        background-color: pink;
+        // background-color: pink;
     }
     .evenement__stage{
-        background-color: lavender;
+        // background-color: lavender;
     }
     .evenement__projets{
-        background-color: aqua;
+        // background-color: aqua;
     }
     .menu__item__icone{
         width: 50px;

@@ -19,13 +19,16 @@
 
 <body>
     <main class="site__main">
-        <?php
+        <nav class="menu_evenement">
+            <h2>Les prochains évènements</h2>
+            <?php
 			// affichage du menu evenement
 			wp_nav_menu(array(
-				"menu" => "evenement",
-				"container" => "nav",
-				"container_class" => "menu_evenement"
-		)); ?>
+                "menu" => "evenement",
+				"container" => "",
+				"container_class" => ""
+            )); ?>
+        </nav>
         <?php
             if ( have_posts() ) :
                 while ( have_posts() ) :

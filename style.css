@@ -763,20 +763,12 @@ big {
 .menu_evenement .menu {
   list-style: none;
   display: flex;
-  border: solid 1px blue;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 .menu_evenement .menu-item {
   width: 25%;
-}
-.menu_evenement .evenement__porte {
-  background-color: pink;
-}
-.menu_evenement .evenement__stage {
-  background-color: lavender;
-}
-.menu_evenement .evenement__projets {
-  background-color: aqua;
 }
 .menu_evenement .menu__item__icone {
   width: 50px;
