@@ -721,6 +721,10 @@ big {
     display: none;
   }
 }
+.burger svg {
+  fill: none;
+  stroke: white;
+}
 
 .menu__aside {
   display: flex;

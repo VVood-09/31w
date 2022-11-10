@@ -54,7 +54,11 @@
 		</header><!-- #masthead -->
 		<aside class="site__menu">
 			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
-			<label for="chk-burger" class="burger">&#127829;</label>
+			<label for="chk-burger" class="burger">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 259">
+					<path stroke-linecap="round" stroke-width="49.3" d="M30 230h250M30 130h250M30 30h250"/>
+				</svg>
+			</label>
 			<nav class="menu__aside">
 				<h2>Menu secondaire</h2>
 			<?php wp_nav_menu(array(
