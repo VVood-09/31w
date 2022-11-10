@@ -20,6 +20,13 @@
 <body>
     <main class="site__main">
         <?php
+			// affichage du menu evenement
+			wp_nav_menu(array(
+				"menu" => "evenement",
+				"container" => "nav",
+				"container_class" => "menu_evenement"
+		)); ?>
+        <?php
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();
