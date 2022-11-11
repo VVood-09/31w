@@ -674,7 +674,7 @@ big {
   background-color: rgb(26, 26, 26);
   padding: 20px 0;
   border-bottom-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .menu__principal .menu {
   margin: 0;
@@ -706,7 +706,7 @@ big {
 }
 
 .chk-burger:checked ~ .menu__aside {
-  transform: translateX(0);
+  left: 10%;
 }
 
 .burger {
@@ -735,19 +735,24 @@ big {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 100vw;
-  top: 0;
+  box-sizing: border-box;
   padding-bottom: 20px;
-  background-color: black;
-  transform: translateX(-100vw);
-  transition: transform 0.5s;
+  left: -100vw;
+  top: 0;
+  padding: 20px;
+  width: 80%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(26, 26, 26);
+  transition: left 0.5s;
   z-index: 1;
 }
 @media screen and (min-width: 990px) {
   .menu__aside {
+    background-color: black;
     position: static;
     padding: 0;
-    transform: translateX(0);
+    left: 0;
     width: auto;
   }
 }
@@ -770,11 +775,13 @@ big {
 }
 
 .menu_evenement .menu {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(26, 26, 26);
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
 }
 .menu_evenement .menu-item {
   text-decoration: none;
@@ -788,11 +795,10 @@ big {
 }
 .menu_evenement .menu-item a:hover .menu__item__icone {
   color: #f88d46;
-  transform: translateX(100%);
+  transform: translateX(80%);
 }
 .menu_evenement .menu__item__icone {
-  width: 50px;
-  height: 50px;
+  margin: 0;
   transform: translateX();
   transition: transform 1s;
 }
