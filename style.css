@@ -615,8 +615,17 @@ big {
   font-size: 125%;
 }
 
-.main__post {
-  margin-bottom: 60px;
+.category__cours {
+  display: flex;
+  gap: 20px;
+  flex: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.category__cours .main__post {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
 }
 
 .site__footer {

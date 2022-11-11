@@ -1,3 +1,12 @@
-.main__post {
-    margin-bottom: $espacement__moyen;
+.category__cours {
+    display: flex;
+    gap: $espacement__petit;
+    flex: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    .main__post{
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 200px;
+    }
 }
