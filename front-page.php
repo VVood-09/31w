@@ -20,7 +20,7 @@
 <body>
     <main class="site__main">
         <nav class="menu_evenement">
-            <h2>Les prochains évènements</h2>
+            <h2>Les évènements à venir</h2>
             <?php
 			// affichage du menu evenement
 			wp_nav_menu(array(

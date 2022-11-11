@@ -1,28 +1,48 @@
 .menu_evenement {
+
     .menu{
         list-style: none;
         display: flex;
-        // border: solid 1px blue;
         justify-content: space-between;
         margin: 0;
         padding: 0;
     }
+
     .menu-item{
+        text-decoration: none;
         width: 25%;
 
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color__link;
+            
+            .menu__item__icone{
+                color: $color__link--hover;
+                transform: translateX(100%);
+            }
+        }
+
     }
-    .evenement__porte{
-        // background-color: pink;
-    }
-    .evenement__stage{
-        // background-color: lavender;
-    }
-    .evenement__projets{
-        // background-color: aqua;
-    }
+
+    
+    // .evenement__porte {
+
+        
+    // } 
+    // .evenement__stage{
+    //     // background-color: lavender;
+    // }
+    // .evenement__projets{
+    //     // background-color: aqua;
+    // }
     .menu__item__icone{
         width: 50px;
         height: 50px;
-        border: 1px solid blue;
+        transform: translateX();
+        transition: transform 1s;
     }
+
+
 }

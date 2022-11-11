@@ -622,6 +622,10 @@ big {
 .site__footer {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  background-color: rgb(26, 26, 26);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 @media screen and (min-width: 990px) {
   .site__footer {
@@ -634,7 +638,6 @@ big {
 .site__footer > div {
   width: auto;
   color: white;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 990px) {
   .site__footer > div {
@@ -670,6 +673,8 @@ big {
 .menu__principal {
   background-color: rgb(26, 26, 26);
   padding: 20px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .menu__principal .menu {
   margin: 0;
@@ -772,12 +777,24 @@ big {
   padding: 0;
 }
 .menu_evenement .menu-item {
+  text-decoration: none;
   width: 25%;
+}
+.menu_evenement .menu-item a {
+  text-decoration: none;
+}
+.menu_evenement .menu-item a:hover {
+  color: #be0d00;
+}
+.menu_evenement .menu-item a:hover .menu__item__icone {
+  color: #f88d46;
+  transform: translateX(100%);
 }
 .menu_evenement .menu__item__icone {
   width: 50px;
   height: 50px;
-  border: 1px solid blue;
+  transform: translateX();
+  transition: transform 1s;
 }
 
 .site__title {

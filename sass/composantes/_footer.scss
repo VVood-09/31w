@@ -1,6 +1,10 @@
 .site__footer {
     display: flex;
     flex-direction: column;
+    padding: $espacement__petit;
+    background-color: $couleur__background--menu__principal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     @media screen and (min-width:990px) {
         margin-top: 120px;
         flex-direction: row;
@@ -11,7 +15,6 @@
 .site__footer > div {
     width: auto;
     color: white;
-    margin-bottom: 20px;
     @media screen and (min-width:990px) {
         width: 20%;
     }
