@@ -35,7 +35,7 @@
 			)); ?>
 			<?php wp_head(); ?>
 			<div class="site__branding">
-
+				<?= get_custom_logo(); ?>
 
 				<h1 class="site__title">
 					<!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">

@@ -36,7 +36,10 @@
                     ?>
                     <article class="main__post">
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <?php the_content(null, true); ?>
+                        <?php if ( has_post_thumbnail() ) {
+	                                the_post_thumbnail('thumbnail');
+                                } ;?>
+                        <?= "<p>".wp_trim_words(get_the_excerpt(), 18, "...")."</p>"; ?>
                     </article>
                 <?php endwhile;
             endif;
