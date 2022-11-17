@@ -38,6 +38,18 @@ function under_setup() {
 			'script',
 		)
 	);
+
+	
+	/**
+	 * Fonction pour la gestion de l'image principale du thème
+	 */
+
+	add_theme_support( 'custom-logo', array(
+	    'height' => 480,
+	    'width'  => 720,
+	) );
+
+	add_theme_support( 'post-thumbnails' );
 }
 
 add_action( 'after_setup_theme', 'under_setup' );

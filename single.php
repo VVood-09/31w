@@ -28,7 +28,7 @@
                 the_content(null, true); ?>
 
                 <p>Écrit le <?php the_weekday(); ?> <?php the_date(); ?> à <?php the_time(); ?>.</p>
-                <p>Par <?php the_author(); ?> <br><small>Catégorie : <?php the_category(); ?></small></p>
+                <p>Par <?php the_author(); ?> <br><small>Catégorie : <?php the_category("", "multiple"); ?></small></p>
             <?php endwhile;
         endif;
             ?>
