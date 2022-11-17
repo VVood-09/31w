@@ -4,6 +4,7 @@
     padding: $espacement__petit 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    font-size: clamp(0.9rem, 3vw, 1.10rem);
     .menu { 
         //ul
         margin: 0;

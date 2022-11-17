@@ -635,6 +635,7 @@ big {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -704,6 +705,7 @@ big {
   padding: 20px 0;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
 }
 .menu__principal .menu {
   margin: 0;

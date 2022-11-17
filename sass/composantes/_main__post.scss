@@ -6,6 +6,7 @@
     // align-items: stretch;
     // justify-content: space-around;
     // flex: 1;
+    
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: $espacement__petit;
@@ -19,11 +20,14 @@
     @media screen and (min-width: 1600px){
         grid-template-columns: repeat(4, 1fr);
     }
-    .main__post{
-        // flex: 0 1 300px;
-        // flex-grow: 0;
-        // flex-shrink: 1;
-        // flex-basis: 300px;
-        // min-width: 0;
-    }
+    // .main__post{
+    //     flex: 1 1 300px;
+    //     // flex-grow: 0;
+    //     // flex-shrink: 1;
+    //     // flex-basis: 300px;
+    //     // min-width: 0;
+    // }
+    // .main__post:last-child{
+    //     flex-grow: 0;
+    // }
 }
