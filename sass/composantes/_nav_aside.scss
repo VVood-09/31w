@@ -7,7 +7,8 @@
 
 .chk-burger:checked ~ .menu__aside {
     // transform: translateX(0);
-    left: 10%;
+    // left: 10%;
+    top: 0;
 }
 .burger {
     position: absolute;
@@ -20,7 +21,7 @@
     transform: rotate(0deg);
     transform-origin: 16px 16px;
     transition: transform 0.5s;
-    @media screen and (min-width:990px) {
+    @media screen and (min-width:1250px) {
         display: none;
     }
     svg{
@@ -37,17 +38,17 @@
     box-sizing: border-box;
     // width: 90vw;
     padding-bottom: 20px;
-    left: -100vw;
-    top: 0;
+    // left: -100vw;
+    top: -100vh;
     padding: 20px;
     width: 80%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: $couleur__background--accent__principal;
     // transform: translateX(0vw);
-    transition: left 0.5s;
+    transition: top 0.5s;
     z-index: 1;
-    @media screen and (min-width:990px) {
+    @media screen and (min-width:1250px) {
         background-color: black;
         position: static;
         padding: 0;
@@ -61,7 +62,7 @@
         padding: 0 $espacement__petit 0 0;
         border: none;
         list-style-type: none;
-        @media screen and (min-width:990px) {
+        @media screen and (min-width:1250px) {
             border-right: 1px solid red;
         }
 

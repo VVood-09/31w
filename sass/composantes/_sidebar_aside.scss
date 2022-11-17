@@ -1,8 +1,13 @@
 .sidebar-aside-1 {
     margin-top: 40px;
-    margin-right: 40px;
+    // margin-right: 40px;
 }
 .sidebar-aside-2 {
     margin-top: 20px;
-    margin-right: 40px;
+    // margin-right: 40px;
+}
+@media screen and (min-width:1250px) {
+    .sidebar-aside-1, .sidebar-aside-2 {
+        margin-right: 40px;
+    }
 }
