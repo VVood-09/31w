@@ -1,4 +1,4 @@
-.category__cours {
+.grille {
     // display: flex;
     // gap: $espacement__petit;
     // flex: row;
@@ -11,14 +11,24 @@
     grid-template-columns: repeat(1, 1fr);
     gap: $espacement__petit;
 
+    
     @media screen and (min-width: 600px){
         grid-template-columns: repeat(2, 1fr);
+        .grille_categorie {
+            grid-column: span 2;
+        }
     }
     @media screen and (min-width: 900px){
         grid-template-columns: repeat(3, 1fr);
+        .grille_categorie {
+            grid-column: span 3;
+        }
     }
     @media screen and (min-width: 1600px){
         grid-template-columns: repeat(4, 1fr);
+        .grille_categorie {
+            grid-column: span 4;
+        }
     }
     // .main__post{
     //     flex: 1 1 300px;

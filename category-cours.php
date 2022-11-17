@@ -19,7 +19,7 @@
 <!-- <h1 class="trace">front-page.php</h1> -->
 
 <body>
-    <main class="site__main category__cours">
+    <main class="site__main grille">
         <?php
         if (have_posts()) :
             while (have_posts()) :

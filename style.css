@@ -615,24 +615,33 @@ big {
   font-size: 125%;
 }
 
-.category__cours {
+.grille {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 @media screen and (min-width: 600px) {
-  .category__cours {
+  .grille {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grille .grille_categorie {
+    grid-column: span 2;
   }
 }
 @media screen and (min-width: 900px) {
-  .category__cours {
+  .grille {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .grille .grille_categorie {
+    grid-column: span 3;
   }
 }
 @media screen and (min-width: 1600px) {
-  .category__cours {
+  .grille {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .grille .grille_categorie {
+    grid-column: span 4;
   }
 }
 
