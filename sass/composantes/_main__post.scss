@@ -1,12 +1,29 @@
 .category__cours {
-    display: flex;
+    // display: flex;
+    // gap: $espacement__petit;
+    // flex: row;
+    // flex-wrap: wrap;
+    // align-items: stretch;
+    // justify-content: space-around;
+    // flex: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: $espacement__petit;
-    flex: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+
+    @media screen and (min-width: 600px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 900px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width: 1600px){
+        grid-template-columns: repeat(4, 1fr);
+    }
     .main__post{
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 200px;
+        // flex: 0 1 300px;
+        // flex-grow: 0;
+        // flex-shrink: 1;
+        // flex-basis: 300px;
+        // min-width: 0;
     }
 }

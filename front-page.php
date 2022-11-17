@@ -35,11 +35,18 @@
                     the_post();
                     ?>
                     <article class="main__post">
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <?php if ( has_post_thumbnail() ) {
-	                                the_post_thumbnail('thumbnail');
-                                } ;?>
-                        <?= "<p>".wp_trim_words(get_the_excerpt(), 18, "...")."</p>"; ?>
+                        <?php if(has_category("galerie")){ ?>
+                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            <?php the_content();
+                        } else { ?>
+                            <h2><a href="<?php the_permalink(); ?>"><?= substr(explode("(", get_the_title())[0], 8); ?></a></h2>
+                            <?php if ( has_post_thumbnail() ) {
+                                        the_post_thumbnail('thumbnail');
+                                    }; 
+                            echo
+                            "<h3>Durée du cours: ".get_field('duree')."</h3>".
+                            "<p>".wp_trim_words(get_the_excerpt(), 18, "...")."</p>";
+                        };?>
                     </article>
                 <?php endwhile;
             endif;

@@ -616,18 +616,25 @@ big {
 }
 
 .category__cours {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-  flex: row;
-  flex-wrap: wrap;
-  align-items: stretch;
 }
-.category__cours .main__post {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 200px;
+@media screen and (min-width: 600px) {
+  .category__cours {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
+@media screen and (min-width: 900px) {
+  .category__cours {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .category__cours {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -682,6 +689,16 @@ big {
     margin-right: 40px;
   }
 }
+.category_title {
+  margin-bottom: 0;
+}
+
+.post-categories {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
 .menu__principal {
   background-color: rgb(26, 26, 26);
   padding: 20px 0;
