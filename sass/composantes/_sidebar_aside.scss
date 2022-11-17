@@ -1,10 +1,10 @@
 .sidebar-aside-1 {
-    margin-top: 40px;
+    margin-top: $espacement__grand;
     // margin-right: 40px;
 }
 .sidebar-aside-2 {
-    margin-top: 20px;
-    // margin-right: 40px;
+    margin-top: $espacement__petit;
+    margin-bottom: $espacement__petit;
 }
 @media screen and (min-width:1250px) {
     .sidebar-aside-1, .sidebar-aside-2 {

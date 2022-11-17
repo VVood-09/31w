@@ -25,8 +25,6 @@
 			// affichage du menu evenement
 			wp_nav_menu(array(
                 "menu" => "evenement",
-				"container" => "",
-				"container_class" => ""
             )); ?>
         </nav>
         <section class="grille">

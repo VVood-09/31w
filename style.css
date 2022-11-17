@@ -687,11 +687,12 @@ big {
 }
 
 .sidebar-aside-1 {
-  margin-top: 40px;
+  margin-top: 120px;
 }
 
 .sidebar-aside-2 {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1250px) {
@@ -819,12 +820,22 @@ big {
   background-color: rgb(26, 26, 26);
   list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 0;
 }
+@media screen and (min-width: 900px) {
+  .menu_evenement .menu {
+    flex-direction: row;
+  }
+}
 .menu_evenement .menu-item {
-  text-decoration: none;
-  width: 25%;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .menu_evenement .menu-item {
+    max-width: 30%;
+  }
 }
 .menu_evenement .menu-item a {
   text-decoration: none;

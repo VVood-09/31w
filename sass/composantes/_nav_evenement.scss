@@ -6,13 +6,19 @@
         background-color: $couleur__background--accent__principal;
         list-style: none;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin: 0;
+        @media screen and (min-width: 900px){
+            flex-direction: row;
+        }
     }
 
     .menu-item{
-        text-decoration: none;
-        width: 25%;
+        width: 100%;
+        @media screen and (min-width: 900px){
+            max-width: 30%;
+        }
 
         a{
             text-decoration: none;
