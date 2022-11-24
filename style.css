@@ -618,10 +618,17 @@ big {
 .header__sidebar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
 }
 .header__sidebar > * {
   width: 50%;
+  min-width: 300px;
+}
+@media screen and (min-width: 1250px) {
+  .header__sidebar > * {
+    width: 100%;
+  }
 }
 .header__sidebar .sidebar-header-recherche .wp-block-search__label {
   color: #f88d46;
@@ -632,11 +639,12 @@ big {
 
 .custom-logo-link {
   margin-right: auto;
+  width: 10%;
 }
-
-.custom-logo-link, .custom-logo {
-  height: 80px;
-  width: 80px;
+@media screen and (min-width: 1250px) {
+  .custom-logo-link {
+    width: 80px;
+  }
 }
 
 .grille {
@@ -740,6 +748,8 @@ big {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: clamp(0.9rem, 3vw, 1rem);
+  width: 80%;
+  height: max-content;
 }
 .menu__principal .menu {
   margin: 0;
@@ -888,24 +898,40 @@ big {
 
 .site__title {
   display: inline;
-  font-size: clamp(2rem, 4vw, 5rem);
-  margin: 20px 0;
+  font-size: 5rem;
+  margin: 20px 10% 20px 0;
+  align-self: center;
+}
+@media screen and (min-width: 1250px) {
+  .site__title {
+    margin: 20px 0;
+  }
 }
 
 .site__description {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   margin: 20px 0;
   align-self: center;
 }
 
 .site__branding {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  margin-top: 20px;
 }
 @media screen and (min-width: 1250px) {
   .site__branding {
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+.site__branding .header_title_box {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1250px) {
+  .site__branding .header_title_box {
+    width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */

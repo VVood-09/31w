@@ -5,6 +5,8 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-size: clamp(0.9rem, 3vw, 1rem);
+    width: 80%;
+    height: max-content;
     .menu { 
         //ul
         margin: 0;

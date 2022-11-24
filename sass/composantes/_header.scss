@@ -10,23 +10,35 @@
 
 .site__title{
     display: inline;
-    font-size: clamp(2rem, 4vw, 5rem);
-    margin: $espacement__petit 0;
+    font-size: 5rem;
+    margin: $espacement__petit 10% $espacement__petit 0;
+    align-self: center;
+    @media screen and (min-width:1250px) {
+        margin: $espacement__petit 0;
+    }
 }
 
 .site__description {
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     margin: $espacement__petit 0;
-    align-self: center;
-    
+    align-self: center; 
 }
 
 .site__branding {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    margin-top: $espacement__petit;
     @media screen and (min-width:1250px) {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .header_title_box {
+        display: flex;
+        flex-direction: row;
+        @media screen and (min-width:1250px) {
+            width: 40%;
+        }
     }
 }

@@ -1,8 +1,7 @@
 .custom-logo-link {
     margin-right: auto;
-}
-
-.custom-logo-link, .custom-logo {
-    height: 80px;
-    width: 80px;
+    width: 10%;
+    @media screen and (min-width:1250px) {
+        width: 80px;
+    }
 }

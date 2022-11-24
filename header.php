@@ -38,24 +38,25 @@
 				<?php wp_head(); ?>
 			</div>
 			<div class="site__branding">
-				
-				<h1 class="site__title">
-					<!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-					</a> -->
-					<?php bloginfo('name'); ?>
-				</h1>
+				<div class="header_title_box">
+					<h1 class="site__title">
+							<!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+						</a> -->
+						<?php bloginfo('name'); ?>
+					</h1>
 
-				<?php
-				$under_description = get_bloginfo('description', 'display');
-				if ($under_description || is_customize_preview()) :
-				?>
-					<p class="site__description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped	
-													?></p>
-				<?php endif; ?>
-			</div>
-			<div class="header__sidebar">
-				<div><?php get_sidebar('header-recherche'); ?></div>
-				<div><?php get_sidebar('header-sociaux'); ?></div>
+					<?php
+					$under_description = get_bloginfo('description', 'display');
+					if ($under_description || is_customize_preview()) :
+						?>
+						<p class="site__description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped	
+														?></p>
+					<?php endif; ?>
+				</div>
+				<div class="header__sidebar">
+					<div><?php get_sidebar('header-recherche'); ?></div>
+					<div><?php get_sidebar('header-sociaux'); ?></div>
+				</div>
 			</div>
 		</header><!-- #masthead -->
 		<aside class="site__menu">
