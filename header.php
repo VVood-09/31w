@@ -50,6 +50,8 @@
 					<p class="site__description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped	
 													?></p>
 				<?php endif; ?>
+				<div><?php get_sidebar('header-recherche'); ?></div>
+				<div><?php get_sidebar('header-sociaux'); ?></div>
 			</div>
 		</header><!-- #masthead -->
 		<aside class="site__menu">
