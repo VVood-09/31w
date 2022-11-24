@@ -4,17 +4,17 @@
     padding: $espacement__petit 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-size: clamp(0.9rem, 3vw, 1.10rem);
+    font-size: clamp(0.9rem, 3vw, 1rem);
     .menu { 
         //ul
         margin: 0;
         padding: 0;
         list-style-type: none;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 1rem;
         @media screen and (min-width:1250px) {
-            flex-direction: row;
             justify-content: space-between;
         }
 
@@ -22,7 +22,7 @@
             //li
         
             a {
-                font-size: 1.2em;
+                // font-size: 1.2em;
                 font-weight: bold;
                 text-decoration: none;
                 padding: 0 $espacement__petit;

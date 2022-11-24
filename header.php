@@ -26,18 +26,20 @@
 	<div id="page" class="site">
 
 		<header id="masthead" class="site__header">
-			<?php
-			// affichage du menu principal
-			wp_nav_menu(array(
+			<div class="header__first_div">
+				<?= get_custom_logo(); ?>
+				<?php
+				// affichage du menu principal
+				wp_nav_menu(array(
 				"menu" => "principal",
 				"container" => "nav",
 				"container_class" => "menu__principal"
-			)); ?>
-			<?php wp_head(); ?>
+				)); ?>
+				<?php wp_head(); ?>
+			</div>
 			<div class="site__branding">
 				
 				<h1 class="site__title">
-					<?= get_custom_logo(); ?>
 					<!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 					</a> -->
 					<?php bloginfo('name'); ?>
@@ -50,6 +52,8 @@
 					<p class="site__description"><?php echo $under_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped	
 													?></p>
 				<?php endif; ?>
+			</div>
+			<div class="header__sidebar">
 				<div><?php get_sidebar('header-recherche'); ?></div>
 				<div><?php get_sidebar('header-sociaux'); ?></div>
 			</div>
