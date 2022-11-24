@@ -176,6 +176,28 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'id'            => 'header-recherche',
+			'name'          => __( 'Recherche' ),
+			'description'   => __( 'Outil de recherche' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'header-sociaux',
+			'name'          => __( 'Réseaux sociaux' ),
+			'description'   => __( 'Icône avec liens pour les réseaux sociaux' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
 
