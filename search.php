@@ -15,18 +15,22 @@
 
 ?>
 <?php get_header(); ?>
-<!-- <h1 class="trace">front-page.php</h1> -->
 
 <body>
     <main class="site__main">
         <section>
-            <h1>Résultat de la recherche</h1>
+            <!-- https://stackoverflow.com/questions/14802498/how-to-display-wordpress-search-results
+                 pour la gestion de la recherche -->
             <?php
-            if ( have_posts() ) :
-                while ( have_posts() ) :
-                    the_post();
-                    ?>
-                    <article class="main__post <?php if(has_category("galerie")){ echo "grille_categorie"; };?>">
+            $s=get_search_query();
+            $args = array('s' =>$s);
+                // The Query
+            $the_query = new WP_Query( $args );
+            if ( $the_query->have_posts() ) {
+                _e("<h1>Résultat de la recherche</h1><h2>Élément de recherche: « ".get_query_var('s')." »</h2>");
+                while ( $the_query->have_posts() ) {
+                    $the_query->the_post() ;?>
+                        <article class="main__post <?php if(has_category("galerie")){ echo "grille_categorie"; };?>">
                         <?php if(has_category("galerie")){ ?>
                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                             <?php the_content();
@@ -39,10 +43,14 @@
                             "<h3>Durée du cours: ".get_field('duree')."</h3>".
                             "<p>".wp_trim_words(get_the_excerpt(), 18, "...")."</p>";
                         };?>
-                    </article>
-                    <?php endwhile;
-            endif;
-            ?>
+                        </article> <?php 
+                }
+            } else { ?>
+                <h1>Aucun article trouvé</h1>
+                <div class="alert alert-info">
+                    <p>Désolé, aucun article contient ne contient « "<?php get_query_var('s') ;?> ». Veuillez essayer une autre recherche.</p>
+                </div>
+            <?php } ?>
         </section>
     </main>
 </body>
