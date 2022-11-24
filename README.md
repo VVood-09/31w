@@ -1,24 +1,21 @@
 # cours 582-31W-MA INTRODUCTION À UN GESTIONNAIRE DE CONTENU
 #### Vincent Dubois e2295393 gr21647
 
-## Exercice 1 
-Création d'un thème pour Wordpress.
+## Épreuve finale 
+Modification du thème sur 4 étapes:
+1. Création de deux sidebars qui seront placés dans l'entête.
+- Widget de recherche;
+- Widget d'icônes sociaux;
+2. Gestion en sass des composantes.
+- Pour les adapter à l'écran (responsive);
+3. Création du modèle de recherche.
+- Tel que front-page.php et category-cours.php;
+- Gestion de son sass en composante;
+4. Dépôt Github.
+- S'assurer d'avoir plusieurs commit et de la qualité des messages;
 
-À partir du theme _underscore, un thème est construit, sur des fonctions essentiels concernant la gestion de menu, header, main, aside et footer.
 
-## TP 1
-Intégration de Widget, amélioration du Plugin et design
-
-Intégration de la fonction de Widget du theme _underscore dans le site web afin d'ajouter des Widgets dans le aside et le footer.
-Optimisation du code et du design (gestion des comportements et CSS) pour le plugin du carrousel ainsi que pour le style général.
 
 Mise en ligne à partir de [Site-ground](siteground.com)
 
 [https://prom3.sg-host.com/](https://prom3.sg-host.com/)
-
-## Exercice 3
-L'objectif est de transformer le menu secondaire, celui en *aside*, en menu *burger*. 
-Lorsque la taille d'affichage de l'écran est suffisament réduit, le menu secondaire se cache.
-Sur le click de l'icône *burger*(une slice de pizzz), le menu secondaire s'affiche à partir de la gauche de l'écran. 
-
-## TP2
