@@ -35,9 +35,9 @@
 			)); ?>
 			<?php wp_head(); ?>
 			<div class="site__branding">
-				<?= get_custom_logo(); ?>
-
+				
 				<h1 class="site__title">
+					<?= get_custom_logo(); ?>
 					<!-- <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 					</a> -->
 					<?php bloginfo('name'); ?>

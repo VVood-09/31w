@@ -1,4 +1,5 @@
 .site__title{
+    display: inline;
     font-size: clamp(2rem, 4vw, 5rem);
 }
 
@@ -6,8 +7,16 @@
     font-size: clamp(1rem, 2vw, 2rem);
 }
 
-
-
 .site__branding {
     text-align: center;
+}
+
+.custom-logo-link, .custom-logo {
+    display: inline-block;
+    justify-content: center;
+}
+
+.custom-logo {
+    height: 80px;
+    width: 80px;
 }

@@ -838,6 +838,7 @@ big {
   }
 }
 .menu_evenement .menu-item a {
+  display: block;
   text-decoration: none;
 }
 .menu_evenement .menu-item a:hover {
@@ -854,6 +855,7 @@ big {
 }
 
 .site__title {
+  display: inline;
   font-size: clamp(2rem, 4vw, 5rem);
 }
 
@@ -863,4 +865,14 @@ big {
 
 .site__branding {
   text-align: center;
+}
+
+.custom-logo-link, .custom-logo {
+  display: inline-block;
+  justify-content: center;
+}
+
+.custom-logo {
+  height: 80px;
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */
