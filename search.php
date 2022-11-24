@@ -36,7 +36,11 @@
                             <a href="<?php the_permalink(); ?>">&#8608;</a></p>
                         </article> <?php 
                 }
-                echo '<p>'.$wp_query->found_posts.' résulats.</p>';
+                if($wp_query->found_posts > 1){
+                    echo '<p>'.$wp_query->found_posts.' résulats.</p>';
+                } else {
+                    echo '<p>'.$wp_query->found_posts.' résulat.</p>';
+                }
             } else { ?>
                 <h1>Aucun article trouvé</h1>
                 <div class="alert alert-info">
