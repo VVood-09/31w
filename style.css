@@ -640,6 +640,10 @@ big {
 .header__sidebar .sidebar-header-recherche .wp-block-search__label {
   color: #f88d46;
 }
+.header__sidebar .sidebar-header-recherche .wp-block-search__button, .header__sidebar .sidebar-header-recherche .wp-block-search__inside-wrapper, .header__sidebar .sidebar-header-recherche input {
+  background-color: white;
+  border: none;
+}
 .header__sidebar .sidebar-header-sociaux {
   margin-top: 20px;
 }

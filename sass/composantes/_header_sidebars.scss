@@ -11,9 +11,13 @@
         }
     }
     .sidebar-header-recherche {
-        
         .wp-block-search__label {
             color: $couleur__titre;
+        }
+
+        .wp-block-search__button, .wp-block-search__inside-wrapper, input {
+            background-color: white;
+            border: none;
         }
     }
 
