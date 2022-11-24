@@ -27,28 +27,20 @@
                 // The Query
             $the_query = new WP_Query( $args );
             if ( $the_query->have_posts() ) {
-                _e("<h1>Résultat de la recherche</h1><h2>Élément de recherche: « ".get_query_var('s')." »</h2>");
+                _e("<h1>Résultat de la recherche</h1><h2>Élément recherché: « ".get_query_var('s')." »</h2>");
                 while ( $the_query->have_posts() ) {
                     $the_query->the_post() ;?>
-                        <article class="main__post <?php if(has_category("galerie")){ echo "grille_categorie"; };?>">
-                        <?php if(has_category("galerie")){ ?>
-                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            <?php the_content();
-                        } else { ?>
-                            <h2><a href="<?php the_permalink(); ?>"><?= substr(explode("(", get_the_title())[0], 8); ?></a></h2>
-                            <?php if ( has_post_thumbnail() ) {
-                                the_post_thumbnail('thumbnail');
-                            }; 
-                            echo
-                            "<h3>Durée du cours: ".get_field('duree')."</h3>".
-                            "<p>".wp_trim_words(get_the_excerpt(), 18, "...")."</p>";
-                        };?>
+                        <article class="post__recherche">
+                            <h2><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h2>
+                            <?php echo "<p>".wp_trim_words(get_the_excerpt(), 18, ""); ?>
+                            <a href="<?php the_permalink(); ?>">&#8608;</a></p>
                         </article> <?php 
                 }
+                echo '<p>'.$wp_query->found_posts.' résulats.</p>';
             } else { ?>
                 <h1>Aucun article trouvé</h1>
                 <div class="alert alert-info">
-                    <p>Désolé, aucun article contient ne contient « "<?php get_query_var('s') ;?> ». Veuillez essayer une autre recherche.</p>
+                    <p>Désolé, aucun article contient ne contient « <?= get_query_var('s') ;?> ». Veuillez essayer une autre recherche.</p>
                 </div>
             <?php } ?>
         </section>
